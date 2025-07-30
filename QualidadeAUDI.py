@@ -30,17 +30,17 @@ def send_multiple_keys(navegador, key, times):
         time.sleep(1)
 
 # Login
-campo_login = WebDriverWait(navegador, 10).until(EC.visibility_of_element_located((By.CSS_SELECTOR, "#username")))
+campo_login = WebDriverWait(navegador, 20).until(EC.visibility_of_element_located((By.CSS_SELECTOR, "#username")))
 campo_login.click()
 campo_login.send_keys(login)
 time.sleep(3)
 
-campo_senha = WebDriverWait(navegador, 10).until(EC.visibility_of_element_located((By.CSS_SELECTOR, "#password")))
+campo_senha = WebDriverWait(navegador, 20).until(EC.visibility_of_element_located((By.CSS_SELECTOR, "#password")))
 campo_senha.click()
 campo_senha.send_keys(senha)
 time.sleep(3)
 
-cliquelogin = WebDriverWait(navegador, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#submit")))
+cliquelogin = WebDriverWait(navegador, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#submit")))
 cliquelogin.click()
 time.sleep(15)
 
