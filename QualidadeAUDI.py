@@ -83,7 +83,7 @@ table_name = "QualidadeAudi"
 with engine.connect() as connection:
     df.to_sql(table_name, con=connection, if_exists='replace', index=False)
 
-print(f"Dados inseridos com sucesso na tabela '{table_name}'!")
+print(f"Dados inseridos com sucesso na tabela! '{table_name}'!")
 
 # Fechando o navegador
 time.sleep(10)
